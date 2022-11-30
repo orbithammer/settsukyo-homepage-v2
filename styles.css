@@ -1,0 +1,154 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    /* background-color: #fff0f3; */
+    background-color: #fae6e7;
+    color: #333450;
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+.hero {
+    background-image: url('images/settsukyo-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 10px #333450;
+}
+
+.title {
+    background-color: #f0c0c0;
+    display: inline;
+    font-size: 32px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px #333450;
+    margin: 100px 0 16px;
+}
+
+.subtitle {
+    background-color: #82c3a0;
+    font-size: 18px;
+    padding: 7px 28px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px #333450;
+    margin: 0 100px 100px;
+}
+
+.top_three {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.activities {
+    display: grid;
+    grid-template: auto auto auto / 1em auto auto auto 1em;
+    /* padding: 40px 0 0 34px; */
+    /* background: red; */
+    grid-gap: 0 1rem;
+}
+
+.river-img {
+     grid-column: 2;
+ }
+ 
+ .hike-img {
+     grid-column: 3;
+ }
+ 
+ .playground-img {
+     grid-column: 4;
+ }
+ 
+ .river-title {
+     grid-row: 2;
+     grid-column: 2;
+ }
+ 
+ .hike-title {
+     grid-row: 2;
+     grid-column: 3;
+ }
+ 
+ .playground-title {
+     grid-row: 2;
+     grid-column: 4;
+ }
+ 
+ .river-copy {
+     grid-row: 3;
+     grid-column: 2;
+ }
+ 
+ .hike-copy {
+     grid-row: 3;
+     grid-column: 3;
+ }
+ 
+ .playground-copy {
+     grid-row: 3;
+     grid-column: 4;
+ }
+ 
+.activity {
+    width: 33%;
+    margin-right: 34px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.activity--img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 2px 10px #333450;
+    justify-self: center;
+}
+
+.guide {
+    background-color: #fff0f3;
+    display: flex;
+    justify-content: center;
+}
+
+.guide--card {
+    background-color: #82c3a0;
+    margin: 50px 160px;
+    border-radius: 10px;
+    display: flex;
+    padding: 23px 13px;
+    box-shadow: 0px 6px 0px #333450;
+}
+
+.guide--img {
+    object-fit: cover;
+    margin-right: 7px;
+    box-shadow: 0px 2px 10px #333450;
+}
+
+img:hover {
+    outline: 4px solid #ff5d8f;
+}
